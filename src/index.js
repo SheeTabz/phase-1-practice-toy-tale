@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // GET REQUEST
-fetch('http://localhost:8000/toys')  
+fetch('http://localhost:3000/toys')  
 .then(response => response.json())
 .then(data => addToysToDom(data))
 
@@ -61,7 +61,7 @@ function  addFromInput() {
   return  {
     "name" : input,
     "image" : input2,
-    "likes" : "0"
+    "likes" : 0,
   }
 }
 
